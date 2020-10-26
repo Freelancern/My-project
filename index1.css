@@ -1,0 +1,104 @@
+*{margin: 0;padding: 0;}
+body{
+	background: #007bfe;
+}
+h1{
+	color: #fff;
+	margin: 30px auto;
+	text-align: center;
+}
+.main{
+	width: 90%;
+	min-height: 420px;
+	text-align: center;
+	position: absolute;
+	cursor: pointer;
+}
+.services{
+	background: #fff;
+	padding: 30px;
+	border: 10px;
+	border-radius: 10px;
+	bottom: 0px;
+	position: absolute;
+	z-index: 1;
+	box-shadow: 0 0 20px -15px #003380;
+    transition: transform 1s;
+}
+.services-logo i {
+    font-size: 65px;
+    color: #007bfe;
+    margin-top: 8px;
+    transition: transform 1s;
+}
+.services-logo{
+	width: 120px;
+	height: 120px;
+	border-radius: 100%;
+	background: #fff;
+	margin: -80px auto 0;
+	border: 15px solid #007bfe;
+}
+.services h4{
+    background: #fff;
+    width: 70%;
+    height: 35px;
+    position: relative;
+    margin: 50px auto;
+
+}
+.services h4::after{
+    content: '';
+    width: 100px;
+    height: 30px;
+    background: linear-gradient(to right,#fff,#007bff);
+    position:absolute;
+    right: -5px;
+    top: -5px;
+    z-index: -1;
+}
+.services h4::before{
+    content: '';
+    width: 100px;
+    height: 30px;
+    background: linear-gradient(to right,#007bff ,#fff);
+    position:absolute;
+    left: -5px;
+    bottom: -5px;
+    z-index: -1;
+}
+.shadowOne{
+	height: 200px;
+	width: 80%;
+	background: #fff;
+	position: absolute;
+	border-radius: 10px;
+	bottom: 0px;
+	left: 10%;
+    z-index: -1;
+    box-shadow: 0 0 20px -15px #003380;
+    transition: transform 1s;
+
+}
+.shadowTwo{
+	height: 200px;
+	width: 65%;
+	background: #fff;
+	position: absolute;
+	border-radius: 10px;
+	bottom: 0px;
+	left: 17%;
+	z-index: -2;
+
+}
+
+.main:hover .services{
+	transform: translateY(-50px);
+}
+.main:hover .shadowOne{
+	transform: translateY(-25px);
+}
+.main:hover i {
+	transform: rotate(360deg);
+}
+
